@@ -1,0 +1,231 @@
+\documentclass[a4paper,10pt]{article}
+
+\usepackage{graphicx,fontawesome}
+\newcommand{\seticon}[1]{\textcolor{black}{\csname #1\endcsname}}
+
+%For bib citation
+\usepackage{natbib}
+
+
+\usepackage{marvosym}
+\usepackage[scale=0.75]{geometry}
+%A Few Useful Packages
+\usepackage{fontawesome}
+\usepackage{import}
+
+\usepackage{marvosym}
+\usepackage{fontspec} 					%for loading fonts
+\usepackage{xunicode,xltxtra,url,parskip} 	%other packages for formatting
+\usepackage{csquotes}
+\usepackage{epigraph}
+\RequirePackage{color,graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[big]{layaureo} 				%better formatting of the A4 page
+% an alternative to Layaureo can be ** \usepackage{fullpage} **
+\usepackage{supertabular} 				%for Grades
+\usepackage{titlesec}					%custom \section
+
+%Setup hyperref package, and colours for links
+\usepackage{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+%FONTS
+\defaultfontfeatures{Mapping=tex-text}
+%\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin}
+%%% modified for Karol Kozioł for ShareLaTeX use
+\setmainfont[
+SmallCapsFont = Fontin-SmallCaps.otf,
+BoldFont = Fontin-Bold.otf,
+ItalicFont = Fontin-Italic.otf
+]
+{Fontin.otf}
+%%%
+
+
+
+
+%CV Sections inspired by: 
+%http://stefano.italians.nl/archives/26
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{3pt}{3pt}
+%Tweak a bit the top margin
+%\addtolength{\voffset}{-1.3cm}
+
+%Italian hyphenation for the word: ''corporations''
+\hyphenation{im-pre-se}
+
+%-------------WATERMARK TEST [**not part of a CV**]---------------
+\usepackage[absolute]{textpos}
+
+\setlength{\TPHorizModule}{30mm}
+\setlength{\TPVertModule}{\TPHorizModule}
+\textblockorigin{2mm}{0.65\paperheight}
+\setlength{\parindent}{0pt}
+
+%--------------------BEGIN DOCUMENT----------------------
+\begin{document}
+
+{\Huge \textcolor{black!30}{Abdelrahman} \textcolor{black!40}{\scshape S. Ahmed}} \hfill
+\includegraphics[width=6em]{chaos-as.jpg} \\
+\textcolor{black!30}{\rule[.5\baselineskip]{\textwidth}{1pt}}
+
+%\name{Abdelrahman S. Ahmed}
+%\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill%}}l}
+%\newcommand{\name}[1]{
+%  \centerline{\large{#1}}
+ % \left{\large{#1}}
+%}
+%\end{tabular*}
+
+
+%WATERMARK TEST [**not part of a CV**]---------------
+%\font\wm=''Baskerville:color=787878'' at 8pt
+%\font\wmweb=''Baskerville:color=FF1493'' at 8pt
+%{\wm 
+%	\begin{textblock}{1}(0,0)
+%		\rotatebox{-90}{\parbox{500mm}{
+%			Typeset by Alessandro Plasmati with \XeTeX\  \today\ for 
+%			{\wmweb \href{http://www.aleplasmati.comuv.com}{aleplasmati.comuv.com}}
+%		}
+%	}
+%	\end{textblock}
+%}
+
+\pagestyle{empty} % non-numbered pages
+
+\font\fb=''[cmr10]'' %for use with \LaTeX command
+
+%--------------------TITLE-------------
+
+%--------------------SECTIONS-----------------------------------
+%Section: Personal Data
+\section{Who Am I}
+
+\begin{tabular}{rl}
+    \textsc{Place \& Date of Birth  \faMapMarker} & Giza, Egypt  | Jun 1994 \\
+    \textsc{Phone \Mobilefone}     & +201091114065\\
+    \textsc{email \Letter }     & \href{mailto:astro@aucegypt.edu}{astro@aucegypt.edu - m.rahm7n@gmail.com} \\
+    
+    
+    \textsc{Linkedin \faLinkedin}  & \href{https://www.linkedin.com/in/astro7x/}{linkedin.com/in/astro7x} \\
+%    \textsc{Github:}  & \href{http://github.com/astro7x/}{github.com/astro7x} \\
+    \textsc{Web \faGlobe}  & \href{http://astro7xx.wordpress.com}{astro} 
+
+
+\end{tabular}
+
+
+%\begin{displayquote}
+%It’s in my DNA to Push my mindset a step further, Think Forward to Thrive , and Look beyond the limits.
+
+%\end{displayquote}
+
+%Section: Education
+\section{Education}
+
+\begin{tabular}{rl}	
+ \textsc 2018-2020 & Master Program, \textbf{Sapienza University of Rome}, Italy
+ \\&
+ \textsc{Dep: Information Engineering, Electronics and Telecommunications (DIET)}\\&
+\textsc{Major: Data Science}
+\end{tabular}
+
+\begin{tabular}{rl}	
+ \textsc{July} 2017 & Bachelor of  \textsc{Electrical Engineering}, \textbf{Canadian International College}, Egypt
+ \\&
+\textsc{Major: Telecommunication Engineering}\\&
+\small\emph{Distinction with Degree of Honor, }
+\textsc{CGPA: 3.72/4.00 }
+%\\&
+ 
+% Thesis: "Cognitive Radio Network" | \small Advisor: Dr. Ahmed\textsc{ ElDeib }\\&
+% \normalsize \textsc{Gpa}: 4.00/4.00
+%\href{https://github.com/astro7x/Cognitive-Radio-Network}{\hfill | \footnotesize Detailed Project Documentation} \\
+\end{tabular}
+
+
+%Section: Work Experience at the top
+\section{Work Experience}
+\begin{tabular}{r|p{11cm}}
+ \emph{Aug 2018} & Research Assistant \\\textsc{Feb 2018}&\emph{The American University in Cairo} \\&\footnotesize{Working on Network Codes based approach for Real-Time Applications and MULTICAST, Broadcast Services}\\\multicolumn{2}{c}{} \\
+ 
+ 
+ \emph{June 2018} & Research Assistant \\\textsc{Dec 2017}&\emph{Virginia Tech -MENA, SmartCI center} \\&\footnotesize{Participated in a Long Term Project Dedicated (CRC-Cognitive Radio Cloud) to Enable a Collaborative Remotely Accessible Environment for Wireless Communication and Networking Research and to enable testing and development for software defined radio, cognitive radio and dynamic spectrum access experiments. CRC is located in VT-MENA Hall, Alexandria University.} \\\multicolumn{2}{c}{} \\
+ % with emphasis on designing and developing GNU Radio based educational labs, visualization techniques and more focus on the development of 8x8 MIMO system based on Open Air Interface (OAI).
+
+
+\textsc{Summer 2016} & Summer Intern at \textsc{ Vodafone} \\&\footnotesize{Received detailed training on mobile evolution from GSM to LTE-A. Training covers GSM to LTE-A system overview, air interface, Frame structure, LTE physical layer,LTE protocol stack, etc. }\\\multicolumn{2}{c}{} \\
+
+\textsc{Summer 2015} & Summer Intern at \textsc{Motorola, SYSTEL} \\&\footnotesize{Received training on 2 way communication based on TETRA specifications and MOTOROLA solution/product MOTOTORBO, which is based on the ETSI standards. }\\\multicolumn{2}{c}{} \\
+
+\textsc{Summer 2014} & Summer Intern at \textsc{3Hands, Huawei partner} \\&\footnotesize{ Got trained on the most relevant and emerging Mobile Standards/Protocols and technologies with a comprehensive business and technical foundation in GSM, UMTS and LTE networks, services and applications. With a focus on all essential network nodes, their functionality as well as their interaction with each other and with nodes outside specific operator network. }\\\multicolumn{2}{c}{} \\
+
+
+\end{tabular}
+
+
+
+
+\section{Technical Skills \& proficiencies}
+  \begin{tabular}{rl}
+
+ Languages:& \textsc{C/C++}, \textsc{shell scripting}, \textsc{Linux}, \textsc{Matlab}, \textsc{Python}, {\fb \LaTeX}\setmainfont[SmallCapsFont=Fontin-SmallCaps.otf]{Fontin.otf}\\
+  Framework:& \textsc{GNU Radio}, \textsc{OAI}, \textsc{ARToolkit}, \textsc{git}, \textsc{unity}
+ \end{tabular}
+
+ 
+\begin{itemize}
+  \item Best understanding of the GSM, GPRS, UMTS, LTE and other mobile standards 
+  \item Strong background in Networking/Wireless protocol stacks 
+  \item Good Knowledge of Configuration Management concepts and tools Github/git \& SVN 
+  \item Good understanding of Testing and Validation Techniques 
+  \item Good Experience with Machine learning, searching and sorting algorithms
+\end{itemize}
+
+
+%Section: Education
+\section{Training \& Workshops}
+\begin{tabular}{rl}	
+ \textsc{Dec} 2017 & \textsc{Big Data Science} \\ & \textbf{National Telecommunication Institute}\\
+ 
+  \textsc{Oct} 2017 & \textsc{Satellite Communications: Technical \& Regulatory Considerations} \\ & \textbf{International Telecommunication Union}\\
+  
+          \textsc{Jul} 2016 & \textsc{Cisco Routing \& Switching 200-120} \\ & \textbf{Cisco Networking Academy}\\
+    
+    
+        \textsc{Dec} 2015 & \textsc{Embedded Systems - AVR based Architecture} \\ & \textbf{Embedded Fab}\\
+        
+    \textsc{May} 2015 & \textsc{S6.02x: Embedded Systems - Shape the World, ARM based Architecture} \\ & \textbf{EDX, The University of Texas System}\\
+    
+
+    
+\end{tabular}
+
+
+
+\section{Publication}
+\begin{tabular}{rl}
+
+ \textsc{Aug 2017} &\textbf{Neural Network Based Over the Air Spectrum Sensing}\\
+ &\small\emph {Abdelrahman S. Ahmed, Ahmed El Dieb, Ingy Mohy, Omar Khaled, Amr Alaa, Mohamed Ali} \\ 
+ &\textsc{CIC Multidisciplinary International Conference, ISSN 2535-2261}
+
+\end{tabular}
+
+%Section: Languages
+\section{Languages}
+\begin{tabular}{rl}
+\textsc{Arabic:}&Mothertongue\\
+\textsc{English:}&Fluent\\
+\end{tabular}
+\vfill
+
+
+% Declare a new group to limit the scope of \MaxNumberedItem to this subsection.
+
+
+\epigraph{ “Your task is not to seek for love, but merely to seek and find all the barriers within yourself that you have built against it."
+ }{\textit{Rumi  \\}}
+
+\end{document}
